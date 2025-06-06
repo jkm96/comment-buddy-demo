@@ -38,7 +38,7 @@ class AuthModal extends Component
 
         if (Auth::attempt(['email' => $this->email, 'password' => $this->password])) {
             session()->regenerate();
-            $this->notifier->toast($this,'Logged in successfully');
+
             $this->dispatch('toast-message', details: [
                 'message' => 'Logged in successfully',
                 'type' => 'success'

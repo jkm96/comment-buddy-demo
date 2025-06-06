@@ -1,4 +1,4 @@
-<div>
+<div class="text-white">
     <p class="text-sm">
         <button wire:click="openAuthModal(true)" class=" hover:cursor-pointer underline">You must be logged in to comment.</button>
     </p>
@@ -31,7 +31,7 @@
 
                     <div class="mt-2 text-center">
                         <button type="submit"
-                                class="bg-gray-800 w-full text-sm py-1.5 px-2 rounded-md flex items-center justify-center gap-2">
+                                class="bg-gray-800 text-white w-full text-sm py-1.5 px-2 rounded-md flex items-center justify-center gap-2">
                             <span wire:loading.remove>Login</span>
                             <span wire:loading>
                                 Loading...
@@ -74,7 +74,7 @@
 
                     <div class="mt-2 text-center">
                         <button type="submit"
-                                class=" w-full text-sm py-1.5 px-2 rounded-md flex items-center justify-center gap-2">
+                                class="bg-gray-800 text-white w-full text-sm py-1.5 px-2 rounded-md flex items-center justify-center gap-2">
                             <span wire:loading.remove>Register</span>
                             <span wire:loading>
                                 Loading...

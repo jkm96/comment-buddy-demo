@@ -25,6 +25,10 @@
 
     <script>
         document.addEventListener('livewire:init', () => {
+            Livewire.on('login-successful', () => {
+                window.location.reload();
+            });
+
             Livewire.on('toast-message', (event) => {
                 toastr.options = {
                     closeButton: true,
